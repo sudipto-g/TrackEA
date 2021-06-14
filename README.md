@@ -27,10 +27,10 @@ TrackEA
 └─── data : COCO dataset object categories
 |    └─── coco.names
 |
-└─── Videos : videos in which Objects are to be Tracked # To be Updated
+└─── Videos : videos in which Objects are to be Tracked 
 |    └─── videos.mp4
 |
-└─── weights : pretained network weights # To be Updated 
+└─── weights : pretained network weights  
 |    └─── yolov3.weights
 |
 └─── darknet.py : implementation of the Network in Pytorch 
