@@ -42,7 +42,7 @@ The broad requirements for running the code are:
 * pytorch=1.8.1
 * opencv=4.5.0
 * matplotlib=3.3.4   
-(Note that the MultiObject Tracker modules are depreciated in OpenCV 4.5.1 onwards)
+(Note that the MultiObject Tracker modules are deprecated in OpenCV 4.5.1 onwards)
   
 If creating a new environment, please use the install.txt file.  
 
