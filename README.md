@@ -10,28 +10,28 @@ Please see the presentation.pdf for more details.
 
 ### Directory Structure
 .
-+-- cfg
-|   +-- yolov3.cfg
-+-- data
-|   +-- coco.names
-+-- Prelims
-|   +-- Presentation.pdf
-|   +-- Tutorial Notebook for Object Tracking.ipynb
-+-- Videos
-|   +-- video.mp4
-+-- Weights
-|   +-- yolov3.weights
-+-- changeable_params.py
-+-- darknet.py
-+-- Detection and Tracking (Multi Object Tracker).ipynb
-+-- Explanatory Notebook.ipynb
-+-- install.txt
-+-- multi_obj_tracker.py
-+-- README.md
-+-- run.py
-+-- tracking.gif
-+-- utils.py
-+-- yolov3.py  
++-- cfg  
+|   +-- yolov3.cfg  
++-- data  
+|   +-- coco.names  
++-- Prelims  
+|   +-- Presentation.pdf  
+|   +-- Tutorial Notebook for Object Tracking.ipynb  
++-- Videos  
+|   +-- video.mp4  
++-- Weights  
+|   +-- yolov3.weights  
++-- changeable_params.py  
++-- darknet.py  
++-- Detection and Tracking (Multi Object Tracker).ipynb  
++-- Explanatory Notebook.ipynb  
++-- install.txt  
++-- multi_obj_tracker.py  
++-- README.md  
++-- run.py  
++-- tracking.gif  
++-- utils.py  
++-- yolov3.py    
 
 ### Dependencies
 The broad requirements for running the code are:
