@@ -9,7 +9,7 @@ Please see the presentation.pdf for more details.
 ## How to use
 
 ### Directory Structure
-.
+.  
 +-- cfg  
 |   +-- yolov3.cfg  
 +-- data  
