@@ -12,29 +12,44 @@ Please see the presentation.pdf for more details.
 
 ```
 TrackEA
-│   README.md
-└───cfg
-|   | yolov3.cfg
-└───data
-|   | coco.names
-└───Prelims
+│   
+└─── README.md
+|
+└─── install.txt : package requirements 
+|
+└─── Prelims : Background and Brief Tutorial 
 |   | Presentation.pdf
 |   | Tutorial Notebook for Object Tracking.ipynb
-└───Videos
-|   | videos.mp4
-└───weights
-|   | yolov3.weights
-|   changeable_params.py  
-|   darknet.py  
-|   Detection and Tracking (Multi Object Tracker).ipynb  
-|   Explanatory Notebook.ipynb  
-|   install.txt  
-|   multi_obj_tracker.py  
-|   README.md  
-|   run.py  
-|   tracking.gif  
-|   utils.py  
-|   yolov3.py    
+|
+└─── cfg : yolov3 layer configurations
+|    └─── yolov3.cfg
+|
+└─── data : COCO dataset object categories
+|    └─── coco.names
+|
+└─── Videos : videos in which Objects are to be Tracked # To be Updated
+|    └─── videos.mp4
+|
+└─── weights : pretained network weights # To be Updated 
+|    └─── yolov3.weights
+|
+└─── darknet.py : implementation of the Network in Pytorch 
+|
+└─── changeable_params.py : parameters which can be changed before tracking 
+|
+└─── multi_obj_tracker.py : module for tracking multiple objects 
+|
+└─── run.py  : module which drives the software
+|
+└─── utils.py  : utility functions for the driver code
+|
+└─── yolov3.py : code to draw bounding boxes for ROI selection   
+|
+└─── tracking.gif  
+|
+└─── Detection and Tracking (Multi Object Tracker).ipynb
+|
+└─── Explanatory Notebook.ipynb  
 ```
 
 ### Dependencies
