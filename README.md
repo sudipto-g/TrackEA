@@ -18,8 +18,8 @@ TrackEA
 └─── install.txt : package requirements 
 |
 └─── Prelims : Background and Brief Tutorial 
-|   | Presentation.pdf
-|   | Tutorial Notebook for Object Tracking.ipynb
+|    └─── Presentation.pdf
+|    └─── Tutorial Notebook for Object Tracking.ipynb
 |
 └─── cfg : yolov3 layer configurations
 |    └─── yolov3.cfg
