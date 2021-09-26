@@ -1,37 +1,26 @@
-## Welcome to GitHub Pages
+## TrackEA
 
-You can use the [editor on GitHub](https://github.com/sudipto-g/TrackEA/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+An Enhanced Object Tracking Algorithm.  
+The basic motivation behind the implementation is very simple.  
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## The Motivation
+Most object tracking systems consider the video as "motion picture" or, a set of images projected one after the other, at a very high frame rate.    
+Consequently, the Object Tracking modules available in most Open Source libraries, eg: OpenCV work in the following way (at a meta level):  
+- In the video stream, the first frame is captured
+- A Region of Interest (RoI) selection is made based on the initial frame
+- The region selected in the previous step is tracked through the next frames
+- Thus, these methods of tracking objects work fins, so long as the object remains within the frame
+- As soon as the objects move out of the frame, no longer is the tracking valid. 
+- Further, in some adaptive trackers, once the objects move out of frame, they may not be recognised even if they reappear in future frames, as adaptive trackers keep updating their state based on the current ground truth data i.e. current video frame  
+  
+    Thus, this makes vanilla Object Tracking highly unsuitable for tracking objects that need to be continuously monitored. For eg: Traffic Data. 
+  
+Thus, to address the above issues, a very simple strategy was adopted. 
 
-### Markdown
+## Enhancement
+An re-initialisation policy was used, everytime a certain number of objects move out of the frame.  
+For instance, in Traffic Survelliance systems, the initial frame is captured and cars/vehicles in the initial frame are detected using the YOLOv3 detector. This corresponds to the ROI selection step.  
+Next, the detected objects are tracked through the remaining frames and as soon as a "fixed number" of vehicles (this "fixed number" can be set by the user) move out of the frame, the tracking is re-initialised. That is, the object detector is run again to select the current ROI and thus, all the problems of a vanilla Object Tracker, spoken of in the Motivation section is addressed.  
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/sudipto-g/TrackEA/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+## Code
+The code is available [here] (https://github.com/sudipto-g/TrackEA). Instructions for usage are also present therein.  
