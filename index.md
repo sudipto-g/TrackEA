@@ -21,6 +21,3 @@ Thus, to address the above issues, a very simple strategy was adopted.
 An re-initialisation policy was used, everytime a certain number of objects move out of the frame.  
 For instance, in Traffic Survelliance systems, the initial frame is captured and cars/vehicles in the initial frame are detected using the YOLOv3 detector. This corresponds to the ROI selection step.  
 Next, the detected objects are tracked through the remaining frames and as soon as a "fixed number" of vehicles (this "fixed number" can be set by the user) move out of the frame, the tracking is re-initialised. That is, the object detector is run again to select the current ROI and thus, all the problems of a vanilla Object Tracker, spoken of in the Motivation section is addressed.  
-
-## Code
-The code is available [here] (https://github.com/sudipto-g/TrackEA). Instructions for usage are also present therein.  
