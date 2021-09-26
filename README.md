@@ -6,8 +6,6 @@ Pronounced : trachea (truh·**kee**·uh)
 This is an implementation of an enhanced object tracking algorithm that uses an improvised re-initialisation strategy for more astute tracking.  
 Please see the presentation.pdf for more details.  
 
-## How to use
-
 ### Directory Structure
 
 ```
