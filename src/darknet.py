@@ -230,10 +230,11 @@ class Darknet(nn.Module):
                 pass
             else:
                 print('unknown type %s' % (block['type']))
-            
+                
             percent_comp = (counter / len(self.blocks)) * 100
 
             print('Loading weights. Please Wait...{:.2f}% Complete'.format(percent_comp), end = '\r', flush = True)
+
 
             counter += 1
 
