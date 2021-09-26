@@ -1,10 +1,11 @@
 import cv2
 from utils import *
 from darknet import Darknet
+import sys
 
-cfg_file = './cfg/yolov3.cfg'
-weight_file = './weights/yolov3.weights'
-namesfile = './data/coco.names'
+cfg_file = '../cfg/yolov3.cfg'
+weight_file = '../weights/yolov3.weights'
+namesfile = '../data/coco.names'
 
 # Load the network architecture
 m = Darknet(cfg_file)

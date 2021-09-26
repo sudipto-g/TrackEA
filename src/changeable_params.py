@@ -3,7 +3,7 @@ trackerTypes = ['BOOSTING', 'MIL', 'KCF','TLD', 'MEDIANFLOW', 'GOTURN', 'MOSSE',
 
 
 # In case a different video is to be used, please CHANGE the pathname
-video_path = "./Videos/video.mp4"
+video_path = "../Videos/video.mp4"
 
 
 # In case a different tracker is to be used, CHANGE it to be one out of the ones specified in the list above

@@ -17,39 +17,31 @@ TrackEA
 |
 └─── install.txt : package requirements 
 |
-└─── Prelims : Background and Brief Tutorial 
+└─── Tutorial Notebooks/ : Background and Brief Tutorial 
 |    └─── Presentation.pdf
-|    └─── Tutorial Notebook for Object Tracking.ipynb
+|    └─── Single Object Tracking.ipynb
+|    └─── Detection and Multi-Object Tracking.ipynb
+|    └─── Explanatory Notebook (Final).ipynb
 |
-└─── cfg : yolov3 layer configurations
+└─── cfg/ : yolov3 layer configurations
 |    └─── yolov3.cfg
 |
-└─── data : COCO dataset object categories
+└─── data/ : COCO dataset object categories
 |    └─── coco.names
 |
-└─── Videos : videos in which Objects are to be Tracked 
-|    └─── videos.mp4
+└─── Videos/ : Videos in which Objects are to be Tracked 
+|    └─── video*.mp4
 |
-└─── weights : pretained network weights  
+└─── weights/ : pretained network weights  
 |    └─── yolov3.weights
 |
-└─── darknet.py : implementation of the Network in Pytorch 
-|
-└─── changeable_params.py : parameters which can be changed before tracking 
-|
-└─── multi_obj_tracker.py : module for tracking multiple objects 
-|
-└─── run.py  : module which drives the software
-|
-└─── utils.py  : utility functions for the driver code
-|
-└─── yolov3.py : code to draw bounding boxes for ROI selection   
-|
-└─── tracking.gif  
-|
-└─── Detection and Tracking (Multi Object Tracker).ipynb
-|
-└─── Explanatory Notebook.ipynb  
+└─── src/
+|    └─── darknet.py : implementation of the Network in Pytorch
+|    └─── changeable_params.py : parameters which can be changed before tracking 
+|    └─── multi_obj_tracker.py : module for tracking multiple objects 
+|    └─── run.py : module which drives the software
+|    └─── utils.py  : utility functions for the driver code
+|    └─── yolov3.py : code to draw bounding boxes for ROI selection   
 ```
 
 ### Dependencies
@@ -61,6 +53,12 @@ The broad requirements for running the code are:
   
 If creating a new environment, please use the install.txt file.  
 
-### Running
+### Instructions for Use:
+1. Clone the repository using ```git clone https://github.com/sudipto-g/TrackEA```
+2. Activate the necessary environment
+3. In the root of the directory, enter the following: ```cd src && python run.py```  
+  
+    
+    
 The run.py file contains the main script that drives the code.  
-The changeable_params.py file contains the file where contents may be modified - mainly the path to the video, type of tracker etc.
+The changeable_params.py file contains the file where contents may be modified - mainly the path to the video, type of tracker etc.  
