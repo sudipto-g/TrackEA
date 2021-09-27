@@ -1,3 +1,4 @@
+![A Demo](https://github.com/sudipto-g/TrackEA/blob/51baf21c4adaa4d1f703677c69df8f24b7719087/people_walking.gif)
 # TrackEA : An Enhanced Object Tracking Algorithm
 
 Pronounced : trachea (truh·**kee**·uh)  
