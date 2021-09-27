@@ -3,6 +3,8 @@
 An Enhanced Object Tracking Algorithm.  
 The basic motivation behind the implementation is very simple.  
 
+![Demo](people_walking.gif){:class="img-responsive"}
+
 
 ## The Motivation
 Most object tracking systems consider the video as "motion picture" or, a set of images projected one after the other, at a very high frame rate.    
