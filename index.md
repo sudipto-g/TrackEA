@@ -3,7 +3,6 @@
 An Enhanced Object Tracking Algorithm.  
 The basic motivation behind the implementation is very simple.  
 
-![A Demo GIF](https://github.com/sudipto-g/TrackEA/blob/51baf21c4adaa4d1f703677c69df8f24b7719087/people_walking.gif)
 
 ## The Motivation
 Most object tracking systems consider the video as "motion picture" or, a set of images projected one after the other, at a very high frame rate.    
