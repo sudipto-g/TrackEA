@@ -35,12 +35,12 @@ TrackEA
 |    └─── yolov3.weights
 |
 └─── src/
-|    └─── darknet.py : implementation of the Network in Pytorch
-|    └─── changeable_params.py : parameters which can be changed before tracking 
-|    └─── multi_obj_tracker.py : module for tracking multiple objects 
-|    └─── run.py : module which drives the software
-|    └─── utils.py  : utility functions for the driver code
-|    └─── yolov3.py : code to draw bounding boxes for ROI selection   
+     └─── darknet.py : implementation of the Network in Pytorch
+     └─── changeable_params.py : parameters which can be changed before tracking 
+     └─── multi_obj_tracker.py : module for tracking multiple objects 
+     └─── run.py : module which drives the software
+     └─── utils.py  : utility functions for the driver code
+     └─── yolov3.py : code to draw bounding boxes for ROI selection   
 ```
 
 ### Dependencies
